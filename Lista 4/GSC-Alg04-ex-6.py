@@ -13,7 +13,6 @@ while palavra != "":
             break
     
     uns = palavra.count("1")
-    print(uns)
     if uns%2 == 0: #numero par de 1
         print("O bit de paridade é 0")
     else:
