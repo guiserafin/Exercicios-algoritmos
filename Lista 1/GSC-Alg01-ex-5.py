@@ -7,12 +7,8 @@ referentes ao retorno dos vasilhames. Pesquise sobre como formatar a saída para
 resposta seja exibida com sinal de reais R$ e exatamente duas casas decimais."""
 
 x = int(input("Informe a quantidade de vasilhames de 1 litro ou menos: "))
-
 y = int(input("Informe a quantidade de vasilhames de 1 litro ou mais: "))
 
-credito = float(x)*0.10 + float(y)*0.25
-
-
+credito = x*0.10 + y*0.25
 
 print("O seu crédito é de R$ %.2f"%credito)
-

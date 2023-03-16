@@ -7,8 +7,6 @@ exibir o peso total do pedido."""
 bugigangas = int(input("Informe o número de bugigangas adquiridas: "))
 quinquilharias = int(input("Informe o número de quinquilharias adquiridas: "))
 
-peso = int(bugigangas)*75 + int(quinquilharias)*112
-
-peso = str(peso)
+peso = str(bugigangas*75 + quinquilharias*112)
 
 print("O peso total da compra é de: "+peso+" gramas")

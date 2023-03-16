@@ -4,5 +4,5 @@ n. Tal soma pode ser computada usando a seguinte fórmula: soma = ((n)(n+1))/2""
 
 x = int(input("Informe um número: "))
 
-soma = ((x)*(x+1))/2
+soma = (x*(x+1))/2
 print(soma)

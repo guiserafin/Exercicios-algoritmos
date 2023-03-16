@@ -4,11 +4,8 @@ da largura e profundidade de uma sala. Após a leitura dos valores, seu programa
 mensagens de entrada e saída (metros e metros quadrados)."""
 
 x = float(input("Informe o comprimento da sala em metros: "))
-
 y = float(input("Informe a largura da sala em metros: "))
 
-area = float(x) * float(y)
+area = x * y
 
-area = str(area)
-
-print("A área da sala é de "+area+" metros quadrados")
+print("A área da sala é de "+str(area)+" metros quadrados")

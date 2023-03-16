@@ -6,12 +6,10 @@ cada valor com exatamente 2 casas decimais."""
 
 valorInicial = int(input("Insira o investimento incial: "))
 
-juroAno1 = valorInicial * 1.12**1
+juroAno1 = (valorInicial) * 1.12**1
 juroAno2 = (valorInicial) * 1.12**2
 juroAno3 = (valorInicial) * 1.12**3
 
 print("O valor após um ano será de R$ %.2f" %juroAno1)
 print("O valor após dois será de R$ %.2f" %juroAno2)
 print("O valor após três anos será de R$ %.2f" %juroAno3)
-
-

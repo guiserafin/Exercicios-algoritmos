@@ -9,6 +9,6 @@ volume = (4/3)*(math.pi)*r**3
 area = math.pi*(r**2)
 
 
-print("O volume da esfera é: %.2f unidades de volume " %volume)
 print("A área do circulo é de: %.2f unidades de área" %area)
+print("O volume da esfera é: %.2f unidades de volume " %volume)
 
