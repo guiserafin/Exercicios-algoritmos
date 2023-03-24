@@ -10,9 +10,8 @@ Crie um programa Python que leia o número de matrícula de um aluno e imprima o
 semestre em que ele foi matriculado. Por exemplo, um número de matrícula 182034 deve
 resultar ano 18 e semestre 2."""
 
-numeroMatricula = int(input("Insira o número da matrícula do aluno: "))
+numeroMatricula = input("Insira o número da matrícula do aluno: ")
 
-numeroMatricula = str(numeroMatricula)
 ano = numeroMatricula[0] + numeroMatricula[1]
 
 semestre = numeroMatricula[2]

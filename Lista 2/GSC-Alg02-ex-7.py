@@ -7,10 +7,8 @@ numero = int(input("Digite um número de 3 dígitos: "))
 while numero > 999 or numero < 100:
     numero = int(input("Digite um número de 3 dígitos: "))
 
-numero = str(numero)
-
-centena = numero[0]
-dezena = numero[1]
-unidade = numero[2]
+centena = numero // 100
+dezena  = (numero % 100) // 10
+unidade = numero % 10
 
 print("A centena é: ", centena, "A dezena é: ", dezena, "A unidade é: ", unidade)

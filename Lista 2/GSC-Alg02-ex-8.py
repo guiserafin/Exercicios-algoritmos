@@ -10,8 +10,8 @@ while numero > 999 or numero < 100:
 
 numero = str(numero)
 
-centena = numero[0]
-dezena = numero[1]
-unidade = numero[2]
+contrario = ''
+for i in range(-1, -4, -1) :
+    contrario += numero[i]
 
-print(unidade+dezena+centena)
+print(contrario)

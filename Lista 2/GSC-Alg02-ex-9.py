@@ -6,8 +6,7 @@ DDMMAA e imprima essa data no formato AAMMDD, onde:
 • a letra A corresponde aos dois últimos algarismos representando o ano.
 Por exemplo: a data 110618 (11 de junho de 2018), deve ser impressa como 180611"""
 
-data = int(input("Insira uma data no formato DDMMAA: "))
-data = str(data)
+data = input("Insira uma data no formato DDMMAA: ")
 
 #09 10 01
 data_invertida = data[4] + data[5] + data[2] + data[3] + data[0] + data[1]

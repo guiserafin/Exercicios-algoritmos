@@ -5,10 +5,10 @@ O programa deve computar eexibir a quantidade total de segundos deste
 intervalo de tempo informado.
 
 """
-dias = int(input("Insira o número de dias "))
-horas = int(input("Insira o número de horas "))
-minutos = int(input("Insira o número de minutos "))
-segundos = int(input("Insira o número de segundos "))
+dias     = int(input("Insira o número de dias: "))
+horas    = int(input("Insira o número de horas: "))
+minutos  = int(input("Insira o número de minutos: "))
+segundos = int(input("Insira o número de segundos: "))
 
 total_de_segundos = 86400*dias + 3600*horas + 60*minutos + segundos
 
