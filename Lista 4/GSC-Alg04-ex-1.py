@@ -1,15 +1,23 @@
-soma = 0
-n = 0
-x = 1
+numeros = []
+while True:
 
-while x != 0:
-    x = int(input('Digite um número (0 para parar): '))
-    if n == 0 and x == 0:
-        print("Erro - Insira pelo menos um valor diferente de 0")
+    x = int(input('Insira um número na soma (0 para parar)'))
+
+    if len(numeros) == 0 and x == 0:
+
+        print('Insira pelo menos um numero diferente de 0')
+
+    elif  x==0 and len(numeros) > 0:
+
         break
-    elif x != 0:
-        soma = soma + x 
-        n += 1
-else:
-    media = soma / n
-    print(f"A média dos números inseridos é {media}")
+    
+    else:
+        numeros.append(x)
+
+soma = 0
+for numero in numeros:
+    soma += numero
+
+media = soma / len(numeros)
+
+print(f'A média dos números é: {media}')

@@ -20,7 +20,8 @@ while x1 != "":
         print(f"A distância entre esses pontos é {dist}")
         perimetro = perimetro + dist
         print(f"O perímetro do polígono é {perimetro}")
-else:
-    print("Fim do programa")
+    else:
+        print("Fim do programa")
+        break
 
     

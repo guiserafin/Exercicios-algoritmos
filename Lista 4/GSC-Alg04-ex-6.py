@@ -1,7 +1,7 @@
 palavra = 0
 
 while palavra != "":
-    palavra = input("Digite uma palabra binária com 8 bits: ")
+    palavra = input("Digite uma palavra binária com 8 bits: ")
 
     if len(palavra) !=8:
         print("Erro 1 - Sua palavra não tem 8 bits")
@@ -11,6 +11,10 @@ while palavra != "":
         if digito !="1" and digito != "0":
             print("Erro 2 - Sua palavra não tem só 0s e 1s")
             break
+    
+    if palavra == "":
+        print('Fim do programa')
+        break
     
     uns = palavra.count("1")
     if uns%2 == 0: #numero par de 1
