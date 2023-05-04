@@ -4,7 +4,7 @@ incluir uma linha de cabeçalho com números de 1 a 10, e também uma coluna com
 mesmos números. A saída esperada do programa deve ser semelhante ao mostrado abaixo:"""
 
 print("\t", end =" ")
-for coluna in range (1, 11)
+for coluna in range (1, 11):
     print(coluna, "\t", end=" ")
 print()
 for linha in range (1,11):

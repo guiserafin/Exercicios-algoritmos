@@ -5,14 +5,22 @@ programa vai precisar ignorar os espaços em branco das frases. Como desafio adi
 amplie sua solução para que também ignore sinais de pontuação e trate letras maiúsculas e
 minúsculas como equivalentes."""
 
-frase = 0
-while frase != "":
+
+while True:
+
     frase = input("Escreva uma frase (Enter para sair): ")
+
+    if (frase == ""):
+        break
+
     nova_frase = ''.join(filter(str.isalnum, frase)) # retira todos os espaços e caracteres especiais da frase
     nova_frase = nova_frase.lower()
-    if nova_frase == nova_frase[::-1] and nova_frase != "":
+    if ( nova_frase == nova_frase[::-1] ):
+
         print(f"A frase {frase} é um palíndromo")
-    elif nova_frase != nova_frase[::-1] and nova_frase != "":
+
+    else:
         print(f'A frase {frase} NÃO é um palíndromo')
-else:
-    print("Fim")
+
+
+print("Fim")

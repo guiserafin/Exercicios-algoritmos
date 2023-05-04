@@ -10,13 +10,14 @@ qualidade desta aproximação depende de como você define “boa o suficiente�
 exemplo, considerar a solução boa o suficiente quando o valor absoluto da diferença entre
 raiz * raiz e x é menor que 10^-12"""
 
-x = int(input("Insira o número que você deseja saber a raiz: "))
+x    = int(input("Insira o número que você deseja saber a raiz: "))
 raiz = x/2
-n = 0
-while raiz*raiz - x < 10**(-12) or x - raiz*raiz < 10**(-12):
-    print(raiz)
+n    = 0
+
+while ( raiz*raiz - x < 10**(-12) or x - raiz*raiz < 10**(-12) ) :
+    
     raiz = (raiz + (x/raiz))/2
-    print(raiz)
+
     n +=1
     if n == 10:
         break
