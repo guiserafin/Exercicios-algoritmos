@@ -6,19 +6,19 @@ def corretor(texto):
     elevarProximo = False
 
     for i in range(0,len(texto)):
-        try:
-            if (texto[i-1] == "." or "!" or "?" or i == 0):
-                saida += texto[i].upper()
-                if texto[i] == " ":
-                    elevarProximo = True
-            else:
-                if(elevarProximo):
-                    saida += texto[i].upper()
-                    elevarProximo = False
-                else:
-                    saida += texto[i]
-        except IndexError:
+
+        pontuacao = ['.', '!', '?']
+        
+        if (texto[i-1] in pontuacao or (texto[i-2] in pontuacao and texto[i] != ' ') or i == 0):
+
+            saida += texto[i].upper()
+
+                
+        else:
+        
             saida += texto[i]
+
+
     return saida
 
 def main():
@@ -26,5 +26,5 @@ def main():
     print ("\n")
     print("Texto formatado: ", corretor(texto))
 
-if __name__ == "__main__":
-    main()
+
+main()

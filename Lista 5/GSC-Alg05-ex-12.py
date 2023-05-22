@@ -5,12 +5,13 @@ def verificar_senha(senha):
     numero = 0
 
     for i in senha:
+
         if i.isupper():
-            maiuscula = maiuscula + 1
-        if i.islower():
-            minuscula = minuscula + 1
-        if str.isnumeric(i):
-            numero = numero + 1
+            maiuscula +=1
+        elif i.islower():
+            minuscula +=1
+        elif str.isnumeric(i):
+            numero +=1
 
     if minuscula < 1 or maiuscula < 1 or numero < 1 or len(senha) < 8:
         return False

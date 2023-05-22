@@ -6,7 +6,6 @@ quando for impressa. Não adicione nenhum caractere ao final da string. Inclui u
 principal que demonstre sua função."""
 #x = 7
 #print(x*"a")
-import time
 
 def central(string,espacos):
    # espacos = int(input("Insira a largura da linha"))

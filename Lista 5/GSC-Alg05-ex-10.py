@@ -3,17 +3,20 @@ def primo(n):
     e se não for retorna False
     n = número"""
 
-    for i in range(2,9):
-        if n == 2:
-            return True
-        elif n%i != 0:
-            return True
-        elif n%i ==0:
-            return False
+    divisores = []
+
+    for i in range(1, n+1):
+        if n % i == 0:
+            divisores.append(i)
+    
+    if (len(divisores) > 2):
+        return False
+    else:
+        return True
 
 def main():
     n = int(input("Insira um número: "))
-    if primo(n) == True:
+    if primo(n):
         print("O número é primo")
     else:
         print("O número não é primo")

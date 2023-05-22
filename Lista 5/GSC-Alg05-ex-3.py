@@ -4,12 +4,14 @@ função que receba a quantidade de ítens de um pedido e retorne o valor total 
 acordo com essas regras. Inclua um programa principal que leia do usuário o número de itens
 adquiridos e mostre o custo do envio."""
 
-def calculadora(quantidade): #recebe como parametro a quantidade de produtos comprados
+def calculadora(quantidade) : 
+    #recebe como parametro a quantidade de produtos comprados
     #calculo do preço do envio de acordo com a quantidade de produtos
-    if quantidade == 1:
-        preco = 10.95
-    elif quantidade >= 2:
-        preco = 10.95 + (2.95*(quantidade - 1))
+
+    if quantidade >= 1:
+
+        preco = 10.95 + ((quantidade-1) * 2.95)
+
     else:
         preco = 0
     
@@ -17,5 +19,5 @@ def calculadora(quantidade): #recebe como parametro a quantidade de produtos com
 
 quantidade = int(input("Insira a quantidade de produtos comprados: "))
 
-print(f"O preço de envio é de R${calculadora(quantidade)}")
+print(f"O preço de envio é de R${round(calculadora(quantidade),2)}")
 

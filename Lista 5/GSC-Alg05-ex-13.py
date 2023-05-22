@@ -1,9 +1,21 @@
+def ehBissexto(ano):
+    if ano % 4 == 0:
+        if ano % 100 == 0:
+            if ano % 400 == 0:
+                return True
+            else:
+                return False
+        else:
+            return True
+    else:
+        return False
+
 def dias_mes(mes,ano):
     """recebe como parametro um mês e um ano e diz quantos dias há nesse mês
     mês = int entre 1 e 12
     ano = int"""
 
-    if ano%4 == 0: #ano bissexto:
+    if ehBissexto(ano):
         if mes == 2:
             print("29 dias")
         elif mes == 2 or mes == 4 or mes == 6 or mes == 9 or mes == 11:
