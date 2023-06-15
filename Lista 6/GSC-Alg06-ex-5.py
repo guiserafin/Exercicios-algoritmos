@@ -1,13 +1,22 @@
 lista_negativos = []
-lista_zeros = []
+lista_zeros     = []
 lista_positivos = []
-numero = 0
+lista_geral     = []
+numero          = 0
+
 while True:
+
     numero = input("Insira um número na lista (Enter para parar): ")
-    if numero == "":
+
+    if (numero == ""):
+
+        lista_geral.append(lista_negativos)
+        lista_geral.append(lista_zeros)
+        lista_geral.append(lista_positivos)
         break
 
     numero = int(numero)
+
     if numero < 0:
         lista_negativos.append(numero)
     elif numero == 0:
@@ -15,7 +24,14 @@ while True:
     else:
         lista_positivos.append(numero)
 
-print(f"Os números negativos da lista são: {lista_negativos}")
-print(f"Os números zeros da lista são: {lista_zeros}")
-print(f"Os números positivos da lista são: {lista_positivos}")
+def retornaNumero(lista):
 
+    for elemento in lista:
+        
+        if type(elemento) != list:
+            print(elemento)
+            
+        else:
+            retornaNumero(elemento)
+
+retornaNumero(lista_geral)

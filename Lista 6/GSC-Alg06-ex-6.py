@@ -1,6 +1,6 @@
-n = 0
+n      = 0
 numero = int(input("Insira um número: "))
-lista = []
+lista  = []
 while n < numero:
     n += 1
     if numero%n == 0:

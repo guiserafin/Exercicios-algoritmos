@@ -8,6 +8,8 @@ def remove_repeticoes(lista):
                 lista.append(palavra)
         else:
             break
-    print(lista)
+    
+    for palavra in lista:
+        print(palavra)
 
 remove_repeticoes(lista)

@@ -31,11 +31,30 @@ def infix_to_prefix(expression):
         prefix.append(stack.pop())
     return ' '.join(reversed(prefix))
 
-def main():
+def evaluate_expression(expression):
+    stack = []
+    tokens = expression.split()
+    for token in reversed(tokens):
+        if token.isdigit():
+            stack.append(int(token))
+        elif is_operator(token):
+            operand1 = stack.pop()
+            operand2 = stack.pop()
+            if token == '+':
+                result = operand1 + operand2
+            elif token == '-':
+                result = operand1 - operand2
+            elif token == '*':
+                result = operand1 * operand2
+            elif token == '/':
+                result = operand1 / operand2
+            stack.append(result)
+    return stack[0]
 
-    infix_expression = input('Insira a expressao: ')
+def main():
+    infix_expression = input("Digite a expressão matemática em formato infixo: ")
     prefix_expression = infix_to_prefix(infix_expression)
-    print("Expressão infixada:", infix_expression)
-    print("Expressão prefixada:", prefix_expression)
+    result = evaluate_expression(prefix_expression)
+    print("Resultado:", result)
 
 main()

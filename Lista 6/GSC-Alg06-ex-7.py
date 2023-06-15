@@ -6,7 +6,6 @@ while n < numero:
     if numero%n == 0:
         lista.append(n)
 
-print(lista)
 resultado = 0
 for i in range(0,len(lista)-1):
     resultado += lista[i]

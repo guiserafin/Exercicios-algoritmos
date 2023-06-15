@@ -8,9 +8,10 @@ def precedencia(operador):
         return 3
     else:
         return (-1)
+
 def main():
     operador = input("Insira um operador matemático (+, -, *, / ou ^): ")
-    precedencia(operador)
+
     if precedencia(operador) == -1:
         print("Erro - Insira um operador válido")
     else:
