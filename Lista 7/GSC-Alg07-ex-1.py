@@ -5,6 +5,7 @@ def caracteres_unicos(palavra):
     palavra = string
     """
     conjunto_de_letras = set()
+    palavra = palavra.strip()
 
     for letra in palavra:
         conjunto_de_letras.add(letra)
@@ -17,12 +18,9 @@ def caracteres_unicos(palavra):
 def main():
     palavra = input("Insira uma palavra: ")
 
-    x = caracteres_unicos(palavra)
-
-    if x == True:
+    if caracteres_unicos(palavra):
         print("A palavra não repete caracteres")
     else:
         print("A palavra repete caracteres")
 
-if __name__ == "__main__":
-    main()
+main()

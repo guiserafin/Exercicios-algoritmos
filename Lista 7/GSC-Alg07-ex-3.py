@@ -3,22 +3,24 @@ def BuscaReversa(valor,dicionario):
     Retorna as chaves do dicionario de acordo com o valor informado
     """
     lista = []
-    for k,v in dicionario.items():
-        if v == valor:
-            lista.append(k)
+    for key,value in dicionario.items():
+        if value == valor:
+            lista.append(key)
     
     return lista
 
 def main():
-    dicionario = {'valor' : 1, 'valor2':2, 'valor3':2, 'valor4':2, 'valor5': 5}
+
+    ##demonstração de funcionamento da função
+    dicionario = {'chave1' : 1, 'chave2' : 2, 'chave3' : 2, 'chave4' : 2, 'chave5' : 5}
     valor = 2
     lista = BuscaReversa(valor,dicionario)
 
     if len(lista) == 0:
-        print("Nenhum valor encontrado")
+        print("Nenhuma chave encontrado")
     else:
-        print("Valores encontrados: ", lista)
+        print("Chaves encontradas: ", lista)
 
-if __name__ == "__main__":
-    main()
+
+main()
 
